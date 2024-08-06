@@ -24,7 +24,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
   z-index: 999;
 }
 .hellosection nav .donate {
@@ -55,7 +54,11 @@ body {
   gap: 8px;
   align-items: center;
 }
+.hellosection nav .icon2 {
+  display: none;
+}
 .hellosection .text {
+  width: 600px;
   color: white;
   display: flex;
   flex-direction: column;
@@ -430,7 +433,6 @@ body {
   padding-block: 30px;
 }
 .events .events-text {
-  margin: 8px;
   font-family: Quicksand;
   font-size: 40px;
   font-weight: 700;
@@ -484,12 +486,9 @@ body {
   justify-content: center;
 }
 .events .event-all-date {
-  position: absolute;
   display: flex;
-  margin-top: -355px;
-  right: 90px;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 }
 
 .story {
@@ -934,24 +933,46 @@ body {
 
 @media screen and (max-width: 600px) {
   .hellosection nav {
+    width: 100%;
     display: flex;
     position: relative;
   }
   .hellosection nav .donate {
-    width: 100px;
+    width: 80px;
+    font-size: 10px;
   }
   .hellosection nav ul {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background-color: purple;
+    background: #9348D9;
+    transition: 0.5s;
+    align-items: center;
+    display: none;
     position: absolute;
     top: 70px;
-    left: 0px;
+    font-size: 30px;
   }
   .hellosection nav ul li {
     flex-wrap: wrap;
+  }
+  .hellosection nav .active {
+    margin-right: 0%;
+  }
+  .hellosection nav .close {
+    margin-right: -100%;
+  }
+  .hellosection nav .icon2 {
+    display: block;
+  }
+  .hellosection .text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .hellosection .text .text-image {
+    position: unset;
   }
   .story {
     display: flex;
@@ -964,24 +985,135 @@ body {
   .shop .shop-content {
     display: flex;
   }
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+  .about .about-image {
+    width: 100%;
+  }
+  .about .about-image img {
+    width: 100%;
+  }
   .about .about-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .about .about-content a {
+    width: 100%;
+  }
+  .values {
+    display: flex;
+    flex-direction: column;
+  }
+  .values .value-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .goals {
+    display: flex;
+    flex-direction: column;
+  }
+  .programs {
+    display: flex;
+    flex-direction: column;
+  }
+  .programs .program-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .programs .cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .impact {
+    display: flex;
+    flex-direction: column;
+  }
+  .impact .impact-image {
+    display: flex;
+    flex-direction: column;
+  }
+  .impact .impact-sty {
+    display: flex;
+    flex-direction: column;
+  }
+  .events {
+    display: flex;
+    flex-direction: column;
+  }
+  .events .events-date {
+    display: flex;
+    flex-direction: column;
+  }
+  .events .events-date .events-image {
+    width: 100%;
+  }
+  .events .events-date .events-image img {
+    width: 100%;
+  }
+  .events .events-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .shop .shop-content {
     display: flex;
     flex-direction: column;
   }
   .cards {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
-  .event-all-date {
+  .asked {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .asked .cont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .asked .cont .container {
+    width: 300px;
+  }
+  .asked .asked-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .volunteer {
+    display: flex;
+    flex-direction: column;
   }
   .contact-form {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
-  .asked-content {
+  .footer {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .footer .footer-content-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .footer-content-wrapper .newsletter {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .footer-content-wrapper .footer-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .matter {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .matter .data {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .matter .input {
+    display: flex;
+    flex-direction: column;
   }
 }/*# sourceMappingURL=style.css.map */
