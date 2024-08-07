@@ -17,7 +17,7 @@ body{
      min-height: 100vh;
      background-size: cover;
      background-position: center;
-     padding-inline: 4%;
+    padding-inline: 4%;
      position: relative;
      nav{
         width: 92%;
@@ -25,7 +25,7 @@ body{
          display: flex;
          align-items: center;
          justify-content: space-between;
-        //  position: fixed;
+         position: fixed;
          z-index: 999;
          .donate{
                     text-decoration: none;
@@ -55,10 +55,8 @@ body{
                     display: flex;
                     gap:8px;
                     align-items: center;
-                   
                  }
             }
-
          }
          .icon2{
             display: none;
@@ -181,6 +179,7 @@ body{
     .values{
         width: 100%;
         background: url("./assets/values.jpeg");
+        background-position: center;
         text-align: center;
         padding: 50px;
         border-radius: 24px;
@@ -209,7 +208,6 @@ body{
                 font-weight: bold;
                 line-height: 1.0;
             }
-           
         }
     }
 }
@@ -357,7 +355,6 @@ body{
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.2s ease;
-           
           }
           
           .donate-button:hover {
@@ -504,7 +501,6 @@ padding-block: 30px;
      }
 }
 .story{
-
     padding-block: 30px;
     background-color: $primaryclr;
     display: flex;
@@ -547,7 +543,6 @@ padding-block: 30px;
                 border-radius: 12px;
             }
         }
-
     }
     .button{
         display: flex;
@@ -977,20 +972,16 @@ padding-block: 30px;
                 flex-direction: column;
                 gap: 10px;
                 background: $minclr;
-                transition: .5s;
                 align-items: center;
-                display: none;
-                // height: 80vh;
-                // flex: flex-start;
-                // background-color: purple;
                 position: absolute;
                 top: 70px;
-                // left: 0px;
                 font-size:30px;
-                // margin-right: -100%;
-                // display: none;
+                display: none;
                li{ 
                  flex-wrap: wrap;
+            }
+            .showhide{
+                display: block;
             }
             }
             .active{
@@ -1025,7 +1016,6 @@ padding-block: 30px;
     .shop{
         .shop-content{
             display: flex;
-            // flex-wrap: wrap;
         }
     }
 // about content
@@ -1089,10 +1079,6 @@ padding-block: 30px;
 .events{
     display: flex;
     flex-direction: column;
-    // .event-all-date{
-    //     display: flex;
-    //     flex-direction: column;
-    // }
     .events-date{
         display: flex;
         flex-direction: column;

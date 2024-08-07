@@ -24,6 +24,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
   z-index: 999;
 }
 .hellosection nav .donate {
@@ -175,6 +176,7 @@ body {
 .wrapper .values {
   width: 100%;
   background: url("./assets/values.jpeg");
+  background-position: center;
   text-align: center;
   padding: 50px;
   border-radius: 24px;
@@ -947,15 +949,17 @@ body {
     flex-direction: column;
     gap: 10px;
     background: #9348D9;
-    transition: 0.5s;
     align-items: center;
-    display: none;
     position: absolute;
     top: 70px;
     font-size: 30px;
+    display: none;
   }
   .hellosection nav ul li {
     flex-wrap: wrap;
+  }
+  .hellosection nav ul .showhide {
+    display: block;
   }
   .hellosection nav .active {
     margin-right: 0%;
